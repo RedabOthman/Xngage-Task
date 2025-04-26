@@ -1,0 +1,173 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #82B808;
+  color: white;
+  width: 100%;
+  height: 75px;
+}
+
+.logo {
+  display: inline-block;
+  width: 50%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.header .container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.burger-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.nav {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  background-color: #333;
+  z-index: 2;
+}
+
+.nav.open {
+  display: block;
+  height: 100%;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.nav ul li.books-link a {
+  color: #82B808;
+  display: flex;
+  align-items: center;
+}
+
+.nav ul li.books-link button {
+  background-color: transparent;
+  border: none;
+  color: #82B808;
+}
+
+.books-link .arrow {
+  margin-left: 4px;
+  font-size: 0.75em;
+  vertical-align: middle;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 8px;
+  width: 400px;
+  position: relative;
+}
+
+.popup-content h3 {
+  margin-top: 0;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+@media (min-width: 769px) {
+  .header {
+    height: auto;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    width: 70%;
+    max-width: 540px;
+    position: static;
+    background-color: transparent;
+  }
+
+  .nav ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .nav ul li {
+    margin: 0;
+  }
+
+  .nav ul li.books-link a,
+  .nav ul li.books-link button {
+    color: #000;
+  }
+}

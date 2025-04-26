@@ -1,0 +1,58 @@
+{
+	"categories": [
+		{
+			"id": 1,
+			"image": "/images/category1.png",
+			"title": "Aenean",
+			"description": "Mauris sollicitudin fermentum libero. Phasellus viverra nulla ut metus varius laoreet."
+		},
+		{
+			"id": 2,
+			"image": "/images/category2.png",
+			"title": "Donec posuere",
+			"description": "Aenean vulputate eleifend tellus. Nulla facilisi."
+		},
+		{
+			"id": 3,
+			"image": "/images/category3.png",
+			"title": "Maecenas",
+			"description": "Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus."
+		},
+		{
+			"id": 4,
+			"image": "/images/category4.png",
+			"title": "Aenean",
+			"description": "Mauris sollicitudin fermentum libero. Phasellus viverra nulla ut metus varius laoreet."
+		},
+		{
+			"id": 5,
+			"image": "/images/category5.png",
+			"title": "Donec posuere",
+			"description": "Aenean vulputate eleifend tellus. Nulla facilisi."
+		},
+		{
+			"id": 6,
+			"image": "/images/category6.png",
+			"title": "Maecenas",
+			"description": "Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus."
+		},
+		{
+			"id": 7,
+			"image": "/images/category7.png",
+			"title": "Aenean",
+			"description": "Mauris sollicitudin fermentum libero. Phasellus viverra nulla ut metus varius laoreet."
+		},
+		{
+			"id": 8,
+			"image": "/images/category8.png",
+			"title": "Donec posuere",
+			"description": "Aenean vulputate eleifend tellus. Nulla facilisi."
+		},
+		{
+			"id": 9,
+			"image": "/images/category3.png",
+			"title": "Maecenas",
+			"description": "Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus."
+		}
+	]
+}

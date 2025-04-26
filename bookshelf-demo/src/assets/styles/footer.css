@@ -1,0 +1,70 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #323232;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.footer-section {
+  margin: 2rem;
+  white-space: nowrap;
+}
+
+.footer-section h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.footer-links-column {
+  list-style: none;
+  padding: 0;
+  min-width: 100px;
+  margin: 0;
+}
+
+.footer-links-column li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links-column a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  color: #8c8c8c;
+}
+
+.footer-links-column a:hover {
+  color: #fff;
+}
+
+.footer-links-column a[href="#books"]{
+  color: #809542;
+  font-weight: 500;
+}
+
+
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1400px) {
+  .footer-section {
+    margin: 0 2rem;
+    padding: 1rem;
+    border-left: 2px solid #262829;
+  }
+}

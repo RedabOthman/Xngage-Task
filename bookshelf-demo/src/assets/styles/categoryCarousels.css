@@ -1,0 +1,148 @@
+.category-section {
+    padding: 20px;
+}
+
+.category-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.category-section.dark {
+    background: radial-gradient(circle at center, #555555 30%, #000000 70%);
+    color: #fff;
+}
+
+.category-section.light {
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+.category-title {
+    font-size: 2rem;
+    margin: 20px auto;
+    font-weight: 400;
+}
+
+.category-carousels > .category-section:last-child {
+    padding-top: 0;
+}
+
+.category-carousels > .category-section:last-child .category-title {
+    margin-top: 0;
+}
+
+.book-card {
+    margin-right: 0;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.category-section.light .book-card {
+    color: #000;
+}
+
+.category-section.dark .book-card{
+    color: #fff;
+}
+
+.book-title, .book-author, .book-reviewed {
+    margin: 5px;
+}
+
+.book-author, .book-reviewed {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.book-reviewed {
+    margin: 0 5px;
+}
+
+.category-section.light .book-author,
+.category-section.light .book-reviewed {
+    color: #858585;
+}
+
+.category-section.dark .book-author,
+.category-section.dark .book-reviewed {
+    color: #809542;
+}
+
+.slick-prev, .slick-next {
+    display: none !important;
+}
+
+@media screen and (min-width: 768px){
+    .category-section {
+        padding: 30px;
+    }
+    .book-card {
+        width: calc(100% - 10px) !important;
+    }
+
+    .book-card img {
+        height: 300px;
+    }
+
+    .slick-list .slick-track {
+        display: flex;
+        gap: 0;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .category-section {
+        padding: 40px;
+    }
+
+    .category-title {
+        padding-left: 26px;
+    }
+
+    .book-card {
+        margin-right: 30px;
+    }
+
+    .slick-list .slick-track {
+        display: flex;
+        gap: 0 30px;
+    }
+
+    .category-section .slick-prev,
+    .category-section .slick-next{
+        display: block !important;
+        width: 35px;
+        height: 35px;
+        background-color: #fff;
+        z-index: 1;
+        border: 1px solid #C6C6C6;;
+    }
+
+    .slick-prev::before,
+    .slick-next::before {
+        font-weight: bold;
+        color: #C6C6C6;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(1, 1.8);
+    }
+
+    .slick-prev.slick-disabled:before,
+    .slick-next.slick-disabled:before {
+        opacity: 1;
+    }
+
+    .slick-prev::before {
+        content: "<";
+        margin: 0 0 6px -3px;
+    }
+
+    .slick-next::before {
+        content: ">";
+        margin: 0 0 6px 2px;
+    }
+}
