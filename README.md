@@ -24,43 +24,6 @@ In the project directory, you can run:
 - npm build – Builds the app for production.
 - npm test – Launches the test runner in interactive watch mode using Jest and React Testing Library.
 
-### Project Structure
-bookshelf-demo/  
-├── public/  
-│   └── data/  
-|       ├── books  
-|       ├── categories  
-│       └── categories.json  
-├── src/  
-│   ├── __test__/  
-|   |   ├── BookDetails.test.tsx  
-|   |   └── Home.test.tsx  
-|   |
-│   ├── components/  
-│   │   ├── BrowseTheCategories/  
-|   |   |   └──  BrowseTheCategories.tsx  
-│   │   ├── CategoryCarousels/  
-|   |   |   ├── BookCarousel.tsx  
-|   |   |   └── CategoryCarousels.tsx  
-│   │   ├── Footer/  
-|   |   |    ├── Footer.tsx  
-|   |   |    └── FooterSection.tsx  
-│   │   ├── Header/  
-|   |   |   └── Header.tsx  
-│   ├── pages/  
-│   │   ├── Home.tsx  
-│   │   └── BookDetails.tsx  
-│   ├── assets/  
-|   |   ├── images/  
-│   │   └── styles  
-│   ├── App.tsx  
-│   ├── index.tsx  
-│   └── setupTests.ts  
-├── package.json  
-├── tsconfig.json  
-├── jest.config.js  
-└── README.md  
-
 ### Technologies Used
 React – Frontend framework for building interactive UI  
 TypeScript – Static typing for safer, cleaner code  
